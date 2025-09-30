@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Cooks Biltong!</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="css/styles.css">
+	<link href="https://fonts.googleapis.com/css2?family=TikTok+Sans:opsz,wght@12..36,300..900&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=TikTok+Sans:opsz,wght@12..36,300..900&display=swap" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="images/favicon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png"> 
+	<link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+	<link rel="icon" sizes="192x192" href="images/andriod-chrome-192.png">
+</head>
+
+<body>
+    <header>
+        <img src="images/logo.jpg" alt="Cooks Biltong logo" height=170 width=250>
+    </header>
+
+    <nav>
+	<p><a href="index.html">Home</a> &nbsp; &#9475; &nbsp; 
+	<a href="product.html">Products</a> &nbsp; &#9475; &nbsp; 
+	<a href="contact.html">Contact us</a> &nbsp; &#9475; &nbsp;
+    <a href="clientFormReg.html">Registration</a></p> 
+    </nav>
+
+    <main>
+		<h1>Client Registration Form</h1>
+
+		<form action="submit.php" method="post" class="reg">
+
+			<label>Preferred Name
+				<input type="text" name="preferredName" required>
+			</label><br><br>
+
+			<label>Full Names as on ID
+				<input type="text" name="fullName" required>
+			</label><br><br>
+
+			<label>Surname
+				<input type="text" name="surname" required>
+			</label><br><br>
+
+			<label>ID Number
+				<input type="text" name="idNumber" required>
+			</label><br><br>
+
+			<label>Telephone
+				<input type="tel" name="workTel">
+			</label><br><br>
+
+			<label>Cellphone Number
+				<input type="tel" name="cellNumber" required>
+			</label><br><br>
+
+			<label>Email
+				<input type="email" name="email" required>
+			</label><br><br>
+
+			<label>Address <br>
+				<textarea name="homeAddress" rows="3" cols="40"></textarea>
+			</label><br><br>
+
+			<label>Postal Address<br>
+				<textarea name="postalAddress" rows="3" cols="40"></textarea>
+			</label><br>
+			<label>
+				<input type="checkbox" name="copyAddress">Copy Home Address to Postal
+			</label><br><br>
+
+			<label>Where did you hear us?<br>
+				<select name="referral">
+					<option value="wordOfMouth">Friends</option>
+					<option value="internet">Social Media</option>
+					<option value="advertising">Advertisment</option>
+					<option value="poster">Poster/Flyer</option>
+				</select>
+			</label><br><br>
+
+			<label>Name on Credit Card
+				<input type="text" name="ccName">
+			</label><br><br>
+
+			<label>Credit Card type<br>
+				<select name="ccType">
+					<option value="visa">Visa</option>
+					<option value="mastercard">MasterCard</option>
+					<option value="amex">American Express</option>
+				</select>
+			</label><br><br>
+
+			<label>Credit Card Number
+				<input type="text" name="ccNumber">
+			</label><br><br>
+
+			<label>Expiration Month <br>
+				<select name="expMonth">
+					<option>January</option><option>February</option>
+					<option>March</option><option>April</option>
+					<option>May</option><option>June</option>
+					<option>July</option><option>August</option>
+					<option>September</option><option>October</option>
+					<option>November</option><option>December</option>
+				</select>
+			</label><br><br>
+
+			<label>Expiration Year <br>
+				<select name="expYear">
+					<option>2024</option><option>2025</option>
+					<option>2026</option><option>2027</option>
+					<option>2028</option><option>2029</option>
+					<option>2030</option><option>2031</option>
+					<option>2032</option><option>2033</option>
+				</select>
+			</label><br><br>
+
+			<label>CVC Number
+				<input type="text" name="cvc">
+			</label><br><br>
+
+			<label>User name
+				<input type="text" name="username" required>
+			</label><br><br>
+
+			<label>Password
+				<input type="password" name="password">
+			</label><br><br>
+
+			<label>Confirm password
+				<input type="password" name="confrimPassword" required>
+			</label><br><br>
+
+			<label>Valid Learner’s License<br>
+      			<select name="learnersLicense">
+        			<option value="yes">Yes</option>
+       				<option value="no">No</option>
+     			 </select>
+   			 </label><br><br>
+
+			<fieldset>
+				<legend>Interested in:</legend>
+				<label><input type="checkbox" name="interest" value="1">P1</label>
+				<label><input type="checkbox" name="interest" value="2">P2</label>
+				<label><input type="checkbox" name="interest" value="3">P3</label>
+				<label><input type="checkbox" name="interest" value="4">P4</label>
+				<label><input type="checkbox" name="interest" value="5">P5</label>
+				<label><input type="checkbox" name="interest" value="6">P6</label>
+			</fieldset><br>
+
+			<label>Additional Information<br>
+				<textarea name="extraInfo" rows="5" cols="60"></textarea>
+			</label><br><br>
+
+			<input type="submit" value="submit">
+		</form>
+        
+    </main>
+
+    <footer>
+	&copy; Copyright 2025. All Rights Reserved.
+	<p>📧<a href="mailto:cooksbiltong@gmail.com">COOKSBILTONG@GMAIL.COM</a></p>
+	<p> 📞telephone:+27682721736</p> 
+    </footer>
+
+</body>
+
+</html>
